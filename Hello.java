@@ -1,4 +1,4 @@
-public class Even {
+public class Hello {
   public static void main(String args[]){
 
   int num = 12;
