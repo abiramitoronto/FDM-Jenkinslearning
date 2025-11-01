@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="179.327" tests="6" skipped="0" failures="0" errors="0">
+<testcase classname="Test that the user is able to signin into the signinpage" name="Test that the user is able to verify the Title and other windows" time="39.385">
+<system-out><![CDATA[
+Given User launches the application.........................................passed
+Then User is able to view the Scotiabank logo...............................passed
+Then User is able to click on the canadapost link...........................passed
+Then User verify the header "Information on Canada Post service disruption".passed
+Then User is able to navigate to the home page..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test that the user is able to signin into the signinpage" name="Test that the user is able to signin and view the error message for invalied credentails - Example #1.1" time="76.481">
+<system-out><![CDATA[
+Given User click on the SignIn button.......................................passed
+Then the user clicks on the Registerpage signin button......................passed
+And User is able to see the error message...................................passed
+When User enter the invalid "aaa" and "222".................................passed
+Then the user clicks on the remember checkbox...............................passed
+Then User is able to navigate to the home page..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test that the user is able to test the Location page" name="Test that the user is able to click the location icon and select the dropdown - Example #1.1" time="23.838">
+<system-out><![CDATA[
+Given User launches the application.........................................passed
+Then User is able to click on the icon......................................passed
+And User verify the header in location page "Find a Scotiabank near you"....passed
+Then User clicks on the SearchBy dropdown "Transit number"..................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test that the user is able to test the Location page" name="Test that the user is able to select Filters" time="12.103">
+<system-out><![CDATA[
+Given User click on the Filter button.......................................passed
+Then the user is able to view the header "Filter your results"..............passed
+And User selects ine of the checkbox........................................passed
+Then User clicks on the Apply Filter button.................................passed
+Then User is able to navigate to the home page..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test that the user is able to signin into the signinpage" name="Test that the user is able to verify the Title and other windows - Example #1.1" time="12.896">
+<system-out><![CDATA[
+Given User launches the application.........................................passed
+Then User search for the "Exchange rate" in the search bar..................passed
+Then User is able to click on the search button.............................passed
+And User click on the exchang currency link.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test that the user is able to signin into the signinpage" name="Test that the user is able to signin and view the error message for invalied credentails - Example #1.1" time="3.366">
+<system-out><![CDATA[
+Given User Verify the foreign exchange rate header..........................passed
+Then the User is able to view the table.....................................passed
+Then User is able to navigate to the home page..............................passed
+]]></system-out>
+</testcase>
+</testsuite>
