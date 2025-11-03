@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="4.504" tests="8" skipped="0" failures="0" errors="0">
+<testcase classname="As a user, I want to be able to get create and update the list of all the foods so that I can see the ID, Name, and Price of the foods" name="Test that the user is able to get the list of all the foods so that I can see the ID, Name, and Price of the foods" time="3.256">
+<system-out><![CDATA[
+When User send the request to the URL ":3000/foods".........................passed
+Then User receives a valid response with status code 200....................passed
+And the response contains a list of foods with all the information..........passed
+]]></system-out>
+</testcase>
+<testcase classname="As a user, I want to be able to get create and update the list of all the foods so that I can see the ID, Name, and Price of the foods" name="Test that the user is able to Creating a new food details in db" time="0.305">
+<system-out><![CDATA[
+When User sends a POST request for "5","Momos",6.99 following item..........passed
+Then User will get a valid response with status code 201....................passed
+And the new food item will be visible in the db.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a user, I want to be able to get create and update the list of all the foods so that I can see the ID, Name, and Price of the foods" name="Update price of a food item" time="0.065">
+<system-out><![CDATA[
+Given User update the price of the food item using "5" and 8.99.............passed
+Then the food item price should be updated..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a user, I want to be able to get create, delete, and uptade the comment" name="Test that the user is able to create a new comment with foodId" time="0.075">
+<system-out><![CDATA[
+Given the base URL is "http://localhost"....................................passed
+When User sends a POSTcreate request for "6",7,"good",6 with the following details.passed
+Then User receives a valid create response with status code 201.............passed
+]]></system-out>
+</testcase>
+<testcase classname="As a user, I want to be able to get create, delete, and uptade the comment" name="Test that the user is able to Delete the comment based on comment id" time="0.051">
+<system-out><![CDATA[
+Given the base URL is "http://localhost"....................................passed
+When User sends a DELETE request to delete using "6"........................passed
+Then User receives a valid  delete response with status code 200............passed
+]]></system-out>
+</testcase>
+<testcase classname="As a user, I want to be able to get create, delete, and uptade the comment" name="Test that the user Get comment information using userId and foodId" time="0.165">
+<system-out><![CDATA[
+Given the base URL is "http://localhost"....................................passed
+When the User sends 2, 1, "well done" to view the body......................passed
+Then User receives a valid updated response with status code 200............passed
+]]></system-out>
+</testcase>
+<testcase classname="User wants to update and delete staff informationn" name="User want to upadte the list of staff" time="0.084">
+<system-out><![CDATA[
+Given the base URL is "http://localhost"....................................passed
+When User updates the staff information using Manager "1"...................passed
+Then User should see the updated staff informartion.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="User wants to update and delete staff informationn" name="Delete a specific staff under a manager and count remaining staff" time="0.094">
+<system-out><![CDATA[
+Given the base URL is "http://localhost"....................................passed
+When User deletes the staff whose id is 1 under manager name "Bell Pepper"..passed
+Then User should verify the updated list of staff count under that manager name "Bell Pepper".passed
+]]></system-out>
+</testcase>
+</testsuite>
