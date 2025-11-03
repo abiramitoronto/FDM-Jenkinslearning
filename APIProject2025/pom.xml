@@ -90,7 +90,7 @@
                 <configuration>
                     <reuseForks>false</reuseForks>
                     <includes>
-                        <include>**/CucumberRunner.java</include>
+                        <include>**/CucumberRunner*.class</include>
                     </includes>
                 </configuration>
             </plugin>
