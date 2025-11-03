@@ -19,7 +19,7 @@ pipeline {
       steps {
         dir('APIProject2025') {
           echo '⚙️ Building and running tests from APIProject folder...'
-          sh 'mvn clean compile'
+          sh 'mvn clean install'
           sh 'mvn test'
         }
       }
