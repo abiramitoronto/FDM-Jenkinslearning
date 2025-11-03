@@ -11,13 +11,13 @@ pipeline {
     stage('Checkout Code') {
       steps {
         echo '🔄 Pulling latest code from GitHub...'
-        git branch: 'main', url: 'https://github.com/seshasai-meka/Apitesting.git'
+        git branch: 'main', url: 'https://github.com/abiramitoronto/FDM-Jenkinslearning.git'
       }
     }
 
     stage('Build and Test Project') {
       steps {
-        dir('APIProject') {
+        dir('APIProject2025') {
           echo '⚙️ Building and running tests from APIProject folder...'
           sh 'mvn clean compile'
           sh 'mvn test'
@@ -32,7 +32,7 @@ pipeline {
           allowMissing: true,
           alwaysLinkToLastBuild: true,
           keepAll: true,
-          reportDir: 'APIProject/Report',
+          reportDir: 'APIProject2025/Report',
           reportFiles: 'cucumberProject.html',
           reportName: 'Cucumber Test Report'
         ])
