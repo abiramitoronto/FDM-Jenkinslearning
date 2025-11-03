@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" 
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-         
+
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.fdmgroup</groupId>
     <artifactId>APIProject2025</artifactId>
@@ -16,7 +16,7 @@
     </properties>
 
     <dependencies>
-        <!-- REST Assured -->
+        <!-- REST Assured for API testing -->
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
@@ -31,22 +31,14 @@
             <version>2.18.2</version>
         </dependency>
 
-        <!-- TestNG -->
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>7.10.2</version>
-            <scope>test</scope>
-        </dependency>
-
-        <!-- Selenium -->
+        <!-- Selenium for UI testing -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>4.35.0</version>
         </dependency>
 
-        <!-- JUnit -->
+        <!-- JUnit 4 (required by Cucumber JUnit runner) -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -59,6 +51,7 @@
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
             <version>7.14.0</version>
+            <scope>test</scope>
         </dependency>
 
         <!-- Cucumber JUnit -->
@@ -66,6 +59,14 @@
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
             <version>7.14.0</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- (Optional) SLF4J Simple Logger to silence warnings -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>2.0.16</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -82,7 +83,7 @@
                 </configuration>
             </plugin>
 
-            <!-- Surefire Plugin for running tests -->
+            <!-- Surefire Plugin for running Cucumber JUnit tests -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -90,8 +91,14 @@
                 <configuration>
                     <reuseForks>false</reuseForks>
                     <includes>
-                        <include>**/CucumberRunner*.class</include>
+                        <include>**/CucumberRunner.java</include>
                     </includes>
+                    <!-- Force JUnit test provider -->
+                    <providers>
+                        <provider>
+                            <name>junit</name>
+                        </provider>
+                    </providers>
                 </configuration>
             </plugin>
         </plugins>
