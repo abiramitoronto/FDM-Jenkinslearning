@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="179.327" tests="6" skipped="0" failures="0" errors="0">
-<testcase classname="Test that the user is able to signin into the signinpage" name="Test that the user is able to verify the Title and other windows" time="39.385">
+<testsuite name="Cucumber" time="140.478" tests="3" skipped="0" failures="0" errors="0">
+<testcase classname="Test that the user is able to signin into the signinpage" name="Test that the user is able to verify the Title and other windows" time="37.284">
 <system-out><![CDATA[
 Given User launches the application.........................................passed
 Then User is able to view the Scotiabank logo...............................passed
@@ -9,7 +9,7 @@ Then User verify the header "Information on Canada Post service disruption".pass
 Then User is able to navigate to the home page..............................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test that the user is able to signin into the signinpage" name="Test that the user is able to signin and view the error message for invalied credentails - Example #1.1" time="76.481">
+<testcase classname="Test that the user is able to signin into the signinpage" name="Test that the user is able to signin and view the error message for invalied credentails - Example #1.1" time="71.693">
 <system-out><![CDATA[
 Given User click on the SignIn button.......................................passed
 Then the user clicks on the Registerpage signin button......................passed
@@ -19,7 +19,7 @@ Then the user clicks on the remember checkbox...............................pass
 Then User is able to navigate to the home page..............................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test that the user is able to test the Location page" name="Test that the user is able to click the location icon and select the dropdown - Example #1.1" time="23.838">
+<testcase classname="Test that the user is able to test the Location page" name="Test that the user is able to click the location icon and select the dropdown - Example #1.1" time="21.186">
 <system-out><![CDATA[
 Given User launches the application.........................................passed
 Then User is able to click on the icon......................................passed
@@ -27,16 +27,163 @@ And User verify the header in location page "Find a Scotiabank near you"....pass
 Then User clicks on the SearchBy dropdown "Transit number"..................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test that the user is able to test the Location page" name="Test that the user is able to select Filters" time="12.103">
+</testsuite>
+t <a href="/ca/en/personal/notices/canada-post.html">...</a> is not clickable at point (500, 224). Other element would receive the click: <div id="dd9" class="mm--dropdown">...</div>
+  (Session info: MicrosoftEdge=142.0.3595.53)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.4.1', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [4abcd2caec6bb7fa9b4688186c0d6ad4, clickElement {id=f.38D83AF29EEB8CE02DE852AD7FE6406D.d.D76B951157BBE37503F5C33E5B9B826C.e.88}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 142.0.3595.53, fedcm:accounts: true, goog:processID: 5791, ms:edgeOptions: {debuggerAddress: localhost:49944}, msedge: {msedgedriverVersion: 142.0.3595.53 (e9d637e9672e..., userDataDir: /var/folders/73/6htn7x5x2tz...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49944/devtoo..., se:cdpVersion: 142.0.3595.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on mac (4abcd2caec6bb7fa9b4688186c0d6ad4)] -> link text: Click here to learn more]
+Session ID: 4abcd2caec6bb7fa9b4688186c0d6ad4
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+	at com.fdmgroup.Pages.SignInPage.clickcadPostLink(SignInPage.java:81)
+	at com.fdmgroup.Stepdefinitions.F1_SignInTest_StepDef.user_is_able_to_click_on_the_canadapost_link(F1_SignInTest_StepDef.java:26)
+	at ✽.User is able to click on the canadapost link(file:///Users/nagaabirami/eclipse-workspace/ScotiabankSeleniumProject2025/src/test/resources/Features/F1_SignInPage.feature:6)
+]]>
+</failure>
 <system-out><![CDATA[
-Given User click on the Filter button.......................................passed
-Then the user is able to view the header "Filter your results"..............passed
-And User selects ine of the checkbox........................................passed
-Then User clicks on the Apply Filter button.................................passed
-Then User is able to navigate to the home page..............................passed
+Given User launches the application.........................................passed
+Then User is able to view the Scotiabank logo...............................passed
+Then User is able to click on the canadapost link...........................failed
+Then User verify the header "Information on Canada Post service disruption".skipped
+Then User is able to navigate to the home page..............................skipped
 ]]></system-out>
 </testcase>
-<testcase classname="Test that the user is able to signin into the signinpage" name="Test that the user is able to verify the Title and other windows - Example #1.1" time="12.896">
+<testcase classname="Test that the user is able to signin into the signinpage" name="Test that the user is able to signin and view the error message for invalied credentails - Example #1.1" time="51.649">
+<failure type="org.openqa.selenium.ElementClickInterceptedException" message="element click intercepted: Element &lt;button class=&quot;ButtonCorestyle__StyledButton-canvas-core__sc-v39ho0-0 ZXCFL ButtonCore__button PrimaryButtonstyle__StyledPrimaryButtonCore-canvas-core__sc-11pddd2-0 RWwNc Button__button--primary Bw8uwVVjQ1mE9WwERNSP&quot; id=&quot;signIn&quot;&gt;...&lt;/button&gt; is not clickable at point (708, 561). Other element would receive the click: &lt;div id=&quot;onetrust-policy-text&quot;&gt;...&lt;/div&gt;
+  (Session info: MicrosoftEdge=142.0.3595.53)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.4.1', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [4abcd2caec6bb7fa9b4688186c0d6ad4, clickElement {id=f.38D83AF29EEB8CE02DE852AD7FE6406D.d.CC0FC4F5E9E34D9599B9C907DEA8C3AF.e.17}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 142.0.3595.53, fedcm:accounts: true, goog:processID: 5791, ms:edgeOptions: {debuggerAddress: localhost:49944}, msedge: {msedgedriverVersion: 142.0.3595.53 (e9d637e9672e..., userDataDir: /var/folders/73/6htn7x5x2tz...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49944/devtoo..., se:cdpVersion: 142.0.3595.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on mac (4abcd2caec6bb7fa9b4688186c0d6ad4)] -&gt; id: signIn]
+Session ID: 4abcd2caec6bb7fa9b4688186c0d6ad4">
+<![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="ButtonCorestyle__StyledButton-canvas-core__sc-v39ho0-0 ZXCFL ButtonCore__button PrimaryButtonstyle__StyledPrimaryButtonCore-canvas-core__sc-11pddd2-0 RWwNc Button__button--primary Bw8uwVVjQ1mE9WwERNSP" id="signIn">...</button> is not clickable at point (708, 561). Other element would receive the click: <div id="onetrust-policy-text">...</div>
+  (Session info: MicrosoftEdge=142.0.3595.53)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.4.1', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [4abcd2caec6bb7fa9b4688186c0d6ad4, clickElement {id=f.38D83AF29EEB8CE02DE852AD7FE6406D.d.CC0FC4F5E9E34D9599B9C907DEA8C3AF.e.17}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 142.0.3595.53, fedcm:accounts: true, goog:processID: 5791, ms:edgeOptions: {debuggerAddress: localhost:49944}, msedge: {msedgedriverVersion: 142.0.3595.53 (e9d637e9672e..., userDataDir: /var/folders/73/6htn7x5x2tz...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49944/devtoo..., se:cdpVersion: 142.0.3595.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on mac (4abcd2caec6bb7fa9b4688186c0d6ad4)] -> id: signIn]
+Session ID: 4abcd2caec6bb7fa9b4688186c0d6ad4
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+	at com.fdmgroup.Pages.SignInPage.clickRegsigniinButton(SignInPage.java:55)
+	at com.fdmgroup.Stepdefinitions.F1_SignInTest_StepDef.the_user_clicks_on_the_registerpage_signin_button(F1_SignInTest_StepDef.java:48)
+	at ✽.the user clicks on the Registerpage signin button(file:///Users/nagaabirami/eclipse-workspace/ScotiabankSeleniumProject2025/src/test/resources/Features/F1_SignInPage.feature:14)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User click on the SignIn button.......................................passed
+Then the user clicks on the Registerpage signin button......................failed
+And User is able to see the error message...................................skipped
+When User enter the invalid "aaa" and "222".................................skipped
+Then the user clicks on the remember checkbox...............................skipped
+Then User is able to navigate to the home page..............................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Test that the user is able to test the Location page" name="Test that the user is able to click the location icon and select the dropdown - Example #1.1" time="50.231">
+<system-out><![CDATA[
+Given User launches the application.........................................passed
+Then User is able to click on the icon......................................passed
+And User verify the header in location page "Find a Scotiabank near you"....passed
+Then User clicks on the SearchBy dropdown "Transit number"..................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test that the user is able to test the Location page" name="Test that the user is able to select Filters" time="1.181">
+<failure type="org.openqa.selenium.ElementClickInterceptedException" message="element click intercepted: Element &lt;button color=&quot;blue&quot; class=&quot;TextButtonstyle__StyleTextButton-canvas-core__sc-1ssjpvn-0 gHhDoM TextButton__button TextButton_icon-margin_left__R48Sj&quot; data-digital-analytics-track=&quot;search-results&quot; data-digital-analytics-detail=&quot;filter-results&quot;&gt;...&lt;/button&gt; is not clickable at point (86, 610). Other element would receive the click: &lt;div id=&quot;onetrust-policy-text&quot;&gt;...&lt;/div&gt;
+  (Session info: MicrosoftEdge=142.0.3595.53)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.4.1', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [4abcd2caec6bb7fa9b4688186c0d6ad4, clickElement {id=f.38D83AF29EEB8CE02DE852AD7FE6406D.d.6C0B0736DCECE51639CB819DB21D28EC.e.215}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 142.0.3595.53, fedcm:accounts: true, goog:processID: 5791, ms:edgeOptions: {debuggerAddress: localhost:49944}, msedge: {msedgedriverVersion: 142.0.3595.53 (e9d637e9672e..., userDataDir: /var/folders/73/6htn7x5x2tz...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49944/devtoo..., se:cdpVersion: 142.0.3595.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on mac (4abcd2caec6bb7fa9b4688186c0d6ad4)] -&gt; xpath: //button[contains(@class,'TextButtonstyle__StyleTextButton-canvas-core__sc-1ssjpvn-0 gHhDoM TextButton__button TextButton_icon-margin_left__R48Sj')]]
+Session ID: 4abcd2caec6bb7fa9b4688186c0d6ad4">
+<![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button color="blue" class="TextButtonstyle__StyleTextButton-canvas-core__sc-1ssjpvn-0 gHhDoM TextButton__button TextButton_icon-margin_left__R48Sj" data-digital-analytics-track="search-results" data-digital-analytics-detail="filter-results">...</button> is not clickable at point (86, 610). Other element would receive the click: <div id="onetrust-policy-text">...</div>
+  (Session info: MicrosoftEdge=142.0.3595.53)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.4.1', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [4abcd2caec6bb7fa9b4688186c0d6ad4, clickElement {id=f.38D83AF29EEB8CE02DE852AD7FE6406D.d.6C0B0736DCECE51639CB819DB21D28EC.e.215}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 142.0.3595.53, fedcm:accounts: true, goog:processID: 5791, ms:edgeOptions: {debuggerAddress: localhost:49944}, msedge: {msedgedriverVersion: 142.0.3595.53 (e9d637e9672e..., userDataDir: /var/folders/73/6htn7x5x2tz...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49944/devtoo..., se:cdpVersion: 142.0.3595.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on mac (4abcd2caec6bb7fa9b4688186c0d6ad4)] -> xpath: //button[contains(@class,'TextButtonstyle__StyleTextButton-canvas-core__sc-1ssjpvn-0 gHhDoM TextButton__button TextButton_icon-margin_left__R48Sj')]]
+Session ID: 4abcd2caec6bb7fa9b4688186c0d6ad4
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+	at com.fdmgroup.Pages.LocationPage.clickLocFilterBtn(LocationPage.java:96)
+	at com.fdmgroup.Stepdefinitions.F2_LocationTest_Stepdef.user_click_on_the_filter_button(F2_LocationTest_Stepdef.java:35)
+	at ✽.User click on the Filter button(file:///Users/nagaabirami/eclipse-workspace/ScotiabankSeleniumProject2025/src/test/resources/Features/F2_LocationPage.feature:16)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User click on the Filter button.......................................failed
+Then the user is able to view the header "Filter your results"..............skipped
+And User selects ine of the checkbox........................................skipped
+Then User clicks on the Apply Filter button.................................skipped
+Then User is able to navigate to the home page..............................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Test that the user is able to signin into the signinpage" name="Test that the user is able to verify the Title and other windows - Example #1.1" time="21.886">
 <system-out><![CDATA[
 Given User launches the application.........................................passed
 Then User search for the "Exchange rate" in the search bar..................passed
@@ -44,7 +191,7 @@ Then User is able to click on the search button.............................pass
 And User click on the exchang currency link.................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test that the user is able to signin into the signinpage" name="Test that the user is able to signin and view the error message for invalied credentails - Example #1.1" time="3.366">
+<testcase classname="Test that the user is able to signin into the signinpage" name="Test that the user is able to signin and view the error message for invalied credentails - Example #1.1" time="3.985">
 <system-out><![CDATA[
 Given User Verify the foreign exchange rate header..........................passed
 Then the User is able to view the table.....................................passed
